@@ -8,24 +8,26 @@ console.log(parseInt(età), parseInt(kmtr), price)
 
 let start = price * kmtr
 
-console.log( start )
+console.log( `Il prezzo base é ${start.toFixed(2)}€` )
+
 
 if ( età < 18 ){
 
-    let sconto1 = start * sc1;
+    let finale = start * sc1;
 
-    console.log ( sconto1 )
+    console.log ( `Il prezzo per la tua età é ${finale.toFixed(2)}€` )
 
 }
-
 
 if ( età > 65 ) {
 
-    let sconto2 = start * sc2
+    let finale = start * sc2
 
-    console.log ( sconto2 )
+    console.log ( `Il prezzo per la tua età é ${finale.toFixed(2)}€` )
 
 }
+
+
 
 
 
